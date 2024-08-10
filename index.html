@@ -1,13 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="utilities.css" />
     <title>Spotify Clone</title>
-</head>
-<body>
-    
+  </head>
+  <body style="background-color: black;">
+    <div class="bodyBox">
+      <div class="main flex">
+        <div class="leftBox m-r">
+          <div class="homeBox bgGrey p-l">
+            <div class="logo">
+              <img class="invert" src="img/logo.svg" alt="Logo" />
+            </div>
+            <ul>
+              <li class="home flex">
+                <img class="invert" src="img/home.svg" alt="Home Icon" /><span
+                  >Home</span
+                >
+              </li>
+              <li class="search flex fontGrey">
+                <img class="invert" src="img/searchIcon.svg" alt="Search Icon" />
+                <span> Search </span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="libraryBox bgGrey p-l">
+            <div class="libraryNav flex">
+              <div class="libraryLogo flex">
+                <img class="invert" src="img/libraryLogo.svg" alt="" />
+                <h3>Your Library</h3>
+              </div>
+              <div class="libraryPlus flex">
+                <img
+                  class="invert"
+                  src="img/libraryPlusIcon.svg"
+                  alt="Add Icon"
+                />
+              </div>
+            </div>
+
+            <div class="libraryContent">
+              <div class="playlist">
+                <h4>Create your first playlist</h4>
+                <p>It's easy, we'll help you</p>
+                <button class="playlistBtn">Create Playlist</button>
+              </div>
+
+              <div class="podcast">
+                <h4>Let's find some podcast to follow</h4>
+                <p>We'll keep you updated on new episodes</p>
+                <button class="podcastBtn">Browse Podcasts</button>
+              </div>
+            </div>
+
+            <div class="footer">
+              <div>
+                <a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a>
+              </div>
+              <div>
+                <a href="https://www.spotify.com/jp/privacy/"
+                  ><span>Privacy Center</span></a
+                >
+              </div>
+              <div>
+                <a href="https://www.spotify.com/jp/legal/privacy-policy/"
+                  ><span>Privacy Policy</span></a
+                >
+              </div>
+              <div>
+                <a href="https://www.spotify.com/jp/legal/cookies-policy/"
+                  ><span>Cookies</span></a
+                >
+              </div>
+              <div>
+                <a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"
+                  ><span>About Ads</span></a
+                >
+              </div>
+              <div>
+                <a href="https://www.spotify.com/jp/accessibility/"
+                  ><span>Accessibility</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rightBox">
+          <div class="rightNav flex">
+            <div class="arrowNav">
+              <span><img src="img/leftArrow.svg" alt="Left Arrow"></span>
+              <span><img src="img/rightArrow.svg" alt="Right Arrow"></span>
+            </div>
+            <div class="btnsNav">
+              <div><button class="signUp">Sign Up</button></div>
+              <div><button class="logIn">Log In</button></div>
+            </div>
+          </div>
+
+          <div class="spotifyPlaylist">
+            <h2 class="spotifyPlaylistHeading">Spotify Playlist</h2>
+
+            <div class="cardsContainer flex">
+              
+              <div class="card">
+                <span class="playBtn">
+                  <img src="img/playButton.svg" alt="Play Button">
+                </span>
+                <img class="playlistCover" src="img/happyhits.jpeg" alt="Happy Hits Playlist" />
+                <h3>Happy Hits!</h3>
+                <p>Hits to boost your mood and fill you with happiness</p>
+              </div>
+              
+              <div class="card">
+                <span class="playBtn">
+                  <img src="img/playButton.svg" alt="Play Button">
+                </span>
+                <img class="playlistCover" src="img/calmingacoustic.jpeg" alt="Calming Acoustic Playlist" />
+                <h3>Calming Acoustic</h3>
+                <p>Keep calm with instrumental acoustic tracks.</p>
+              </div>
+
+              <div class="card">
+                <span class="playBtn">
+                  <img src="img/playButton.svg" alt="Play Button">
+                </span>
+                <img class="playlistCover" src="img/calssicalchristmas.jpeg" alt="Classical Christmas Playlist" />
+                <h3>Classical Christmas</h3>
+                <p>Heartwarming carols and classical Christmas favourites, guaranteed to make any festive occasion merry and bright.</p>
+              </div>
+
+              <div class="card">
+                <span class="playBtn">
+                  <img src="img/playButton.svg" alt="Play Button">
+                </span>
+                <img class="playlistCover" src="img/lofichill.jpeg" alt="Lofi Chill Playlist" />
+                <h3>Lofi Chill</h3>
+                <p>Lazy slow lofi beats for laid-back moments.</p>
+              </div>
+
+              <div class="card">
+                <span class="playBtn">
+                  <img src="img/playButton.svg" alt="Play Button">
+                </span>
+                <img class="playlistCover" src="img/viralhits.jpeg" alt="Viral Hits Playlist" />
+                <h3>Viral Hits</h3>
+                <p>Viral, trending and taking off.</p>
+              </div>
+              
+              <div class="card">
+                <span class="playBtn">
+                  <img src="img/playButton.svg" alt="Play Button">
+                </span>
+                <img class="playlistCover" src="img/loungesofthouse.jpeg" alt="Lounge Soft House Playlist" />
+                <h3>Lounge - Soft House</h3>
+                <p>Soft house music for your laidback moments.</p>
+              </div>
+              
+              <div class="card">
+                <span class="playBtn">
+                  <img src="img/playButton.svg" alt="Play Button">
+                </span>
+                <img class="playlistCover" src="img/cozychristmasjazz.jpeg" alt="Cozy Christmas Jazz Playlist" />
+                <h3>Cozy Christmas Jazz</h3>
+                <p>Warm instrumental versions of your favorite Christmas songs.</p>
+              </div>
+
+            </div>
+          </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="signUpFooter flex">
+        <div class="mssg">
+          <p class="footerMssg1">Preview of Spotify</p>
+          <p class="footerMssg2">Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+        </div>
+        <div class="freeSignUp">
+          <button class="freeSignUpBtn">Sign Up Free</button>
+        </div>
+      </div>
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

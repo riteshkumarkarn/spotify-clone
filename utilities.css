@@ -1,0 +1,23 @@
+.flex {
+    display: flex;
+}
+
+.fontGrey {
+    color: #b3b3b3;
+}
+
+.bgGrey {
+    background-color: #121212;
+}
+
+.p-l {
+    padding-left: 1.2em;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.m-r {
+    margin-right: 5px;
+}
