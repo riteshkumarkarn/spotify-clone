@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Varela+Round&display=swap');
+
+
+
 * {
     margin: 0;
     padding: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: "Varela Round", "Roboto", sans-serif;
     font-weight: 400;
 }
 
@@ -17,6 +21,7 @@
 
 .main {
     background-color: black;
+    position: relative;
 }
 
 .leftBox {
@@ -24,6 +29,17 @@
     height: 90vh;
     background-color: black;
     color: white;
+    transition: all 0.3s ease;
+}
+
+.logo_close {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.closeBtn {
+    padding-right: 18px;
+    display: none;
 }
 
 .homeBox {
@@ -142,9 +158,9 @@
 
 .footer {
     display: flex;
-    font-size: 10px;
+    font-size: 8px;
     color: grey;
-    gap: 13px;
+    gap: 11px;
     position: absolute;
     bottom: 0;
     padding: 10px 0;
@@ -168,7 +184,8 @@
     width: 77vw;
     background-color: black;
     margin-top: 0.35em; 
-    height: 90vh;  
+    height: 90vh; 
+    max-height: 90vh; 
 }
 
 .rightNav {
@@ -177,11 +194,20 @@
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
     justify-content: space-between;
-    height: 4%;
+    height: 6%;
+    align-items: center;
+}
+
+.hamArrowNav {
+    gap: 16px;
+}
+
+.hamburger {
+    display: none;
 }
 
 .arrowNav {
-    margin-top: auto;
+    align-items: center;
 }
 
 .arrowNav span {
@@ -225,27 +251,26 @@
 
 .logIn:hover{
     font-weight: 600;
-    font-size: 1.2em;
 }
 
 .spotifyPlaylist {
-    height: 90%;
+    height: 89%;
     background-color: #1d1d1d;
     color: white;
     margin: 0;
     overflow-y: scroll;
-    /* max-height: 77.5vh; */
+    max-height: 84vh;
     border-bottom-left-radius: 0.5em;
     border-bottom-right-radius: 0.5em; 
 }
 
 .spotifyPlaylist::-webkit-scrollbar {
-    width: 8px; /* Width of the scrollbar */
+    width: 8px;
 }
 
 .spotifyPlaylist::-webkit-scrollbar-track {
-    background: #2e2e2e; /* Track color */
-    border-radius: 8px; /* Rounded corners for the track */
+    background: #2e2e2e;
+    border-radius: 8px;
 }
 
 
@@ -260,7 +285,7 @@
 }
 
 .card {
-    width: 14em;
+    width: 23%;
     position: relative;
     padding: 0 1.5%;
     background-color: #181818;
@@ -326,6 +351,11 @@
     margin: auto;
 }
 
+.mssg {
+    margin: auto 1em;
+    font-size: small;
+}
+
 .footerMssg1 {
     padding: 0.4em;
     font-weight: 500;
@@ -334,6 +364,10 @@
 .footerMssg2 {
     padding-left: 0.4em;
     padding-bottom: 0.4em;
+}
+
+.freeSignUp {
+    margin: auto 1em;
 }
 
 .freeSignUpBtn {
@@ -345,10 +379,60 @@
     cursor: pointer;
     border: none;
     transition: transform 0.3s ease;
-    margin: 0.6em 1em;
 }
 
 .freeSignUpBtn:hover{
-    font-weight: 600;
-    font-size: 1.2em;
+    font-weight: bold;
+    font-size: 1.1em;
 }
+
+@media (width <=1050px) {
+    .card {
+        width: 30%;
+    }
+}
+
+@media (width <= 800px) {
+  .freeSignUp {
+      font-size: smaller;
+  }
+}
+
+@media (width <= 650px) {
+  .card {
+      width: 45%;;
+  }
+
+  .leftBox {
+      position: absolute;
+      left: -120%;
+      z-index: 1;
+      width: 75vw;
+  }
+
+  .rightBox {
+      width: 100vw;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .closeBtn {
+    display: block;
+  }
+
+  .signUpFooter {
+      font-size: x-small;
+  }
+}
+
+@media (width <= 500px) {
+    .mssg {
+        font-size: smaller;
+    }
+  }
+
+  
+
+
