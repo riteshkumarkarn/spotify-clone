@@ -6,8 +6,8 @@ This project is a simple clone of Spotify using HTML and CSS. It replicates the 
 
 ## Features
 - Responsive design for various screen sizes.
-- Basic layout mimicking Spotify's interface
-- CSS-based styling for visual appeal
+- Basic layout mimicking Spotify's interface.
+- CSS-based styling for visual appeal.
 
 ## To Do
 
