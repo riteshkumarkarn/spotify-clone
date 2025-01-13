@@ -20,7 +20,7 @@ To view or contribute to this project, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/riteshkumarkarn/Spotify-Clone.git
+   git clone https://github.com/riteshkrkarn/Spotify-Clone.git
 
 2. Navigate to the project directory:
 
